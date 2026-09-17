@@ -1,0 +1,84 @@
+{
+  "target_k": 6,
+  "features": [
+    "item_category",
+    "item_type",
+    "spend_area",
+    "sub_spend_area",
+    "spend_classification",
+    "document_type",
+    "company",
+    "gr_based_inv_verif",
+    "goods_receipt",
+    "case_value_eur_log"
+  ],
+  "categorical": [
+    "item_category",
+    "item_type",
+    "spend_area",
+    "sub_spend_area",
+    "spend_classification",
+    "document_type",
+    "company",
+    "gr_based_inv_verif",
+    "goods_receipt"
+  ],
+  "untuned": {
+    "xgb": {
+      "macro_f1": 0.492,
+      "weighted_f1": 0.628
+    },
+    "catboost": {
+      "macro_f1": 0.43,
+      "weighted_f1": 0.508
+    }
+  },
+  "tuned_best_params": {
+    "subsample": 0.85,
+    "reg_lambda": 3,
+    "n_estimators": 500,
+    "min_child_weight": 1,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "gamma": 0.0,
+    "colsample_bytree": 0.7
+  },
+  "tuned_cv_f1_weighted": 0.61,
+  "tuned_overall_optimised": {
+    "weighting": "balanced",
+    "accuracy": 0.655,
+    "weighted_f1": 0.629,
+    "macro_f1": 0.492
+  },
+  "tuned_macro_optimised": {
+    "weighting": "sqrt-balanced",
+    "accuracy": 0.655,
+    "weighted_f1": 0.629,
+    "macro_f1": 0.492
+  },
+  "baseline_macro_f1": 0.169,
+  "winner": "XGBoost",
+  "assoc_cramers_v": {
+    "item_category": 0.428,
+    "item_type": 0.39,
+    "gr_based_inv_verif": 0.343,
+    "sub_spend_area": 0.242,
+    "document_type": 0.214,
+    "spend_area": 0.163,
+    "spend_classification": 0.113,
+    "goods_receipt": 0.073,
+    "company": 0.044
+  },
+  "mutual_info": {
+    "case_value_eur_log": 0.2373,
+    "item_type": 0.1915,
+    "item_category": 0.1597,
+    "sub_spend_area": 0.0754,
+    "spend_area": 0.0454,
+    "gr_based_inv_verif": 0.0289,
+    "spend_classification": 0.0186,
+    "document_type": 0.0184,
+    "company": 0.0024,
+    "goods_receipt": 0.0023
+  }
+}

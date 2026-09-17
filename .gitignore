@@ -1,0 +1,23 @@
+# Raw and cached data — the XES is ~695 MB, download it instead (see data/README.md)
+data/*
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Tooling
+.pytest_cache/
+.coverage
+catboost_info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

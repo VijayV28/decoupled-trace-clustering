@@ -1,0 +1,21 @@
+{
+  "spec": "B_eng11_only",
+  "k": 6,
+  "silhouette": 0.478,
+  "columns": [
+    "total_events",
+    "unique_activities",
+    "n_resources",
+    "n_goods_receipts",
+    "has_payment_block_removed",
+    "has_change_activity",
+    "has_cancel_activity",
+    "has_delete_po_item",
+    "automation_ratio",
+    "repetition_ratio",
+    "handoff_ratio"
+  ],
+  "logcols": [],
+  "scaler": "z",
+  "note": "dropped 30 bigram TF-IDF (they depressed silhouette); engineered-only, z-scored"
+}

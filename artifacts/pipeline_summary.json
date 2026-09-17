@@ -1,0 +1,141 @@
+{
+  "k": 6,
+  "silhouette": 0.478,
+  "calinski_harabasz": 74238.5,
+  "davies_bouldin": 1.059,
+  "n_cases": 251734,
+  "cluster_features": [
+    "total_events",
+    "unique_activities",
+    "n_resources",
+    "n_goods_receipts",
+    "has_payment_block_removed",
+    "has_change_activity",
+    "has_cancel_activity",
+    "has_delete_po_item",
+    "automation_ratio",
+    "repetition_ratio",
+    "handoff_ratio"
+  ],
+  "context_features": [
+    "item_category",
+    "item_type",
+    "spend_area",
+    "sub_spend_area",
+    "spend_classification",
+    "document_type",
+    "company",
+    "gr_based_inv_verif",
+    "goods_receipt",
+    "case_value_eur_log"
+  ],
+  "context_categorical": [
+    "item_category",
+    "item_type",
+    "spend_area",
+    "sub_spend_area",
+    "spend_classification",
+    "document_type",
+    "company",
+    "gr_based_inv_verif",
+    "goods_receipt"
+  ],
+  "note": "structural context only (no vendor); case_value numeric (decile-binned for driver display only); bigram TF-IDF used for explanation only",
+  "xgb_params": {
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.85,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 1,
+    "reg_lambda": 3,
+    "gamma": 0.0
+  },
+  "classification": {
+    "weighting": "balanced",
+    "accuracy": 0.655,
+    "macro_f1": 0.492,
+    "weighted_f1": 0.629
+  },
+  "cohort_kpi_rank": [
+    {
+      "cohort": 4,
+      "n_cases": 846,
+      "cycle_time_days_median": 0.058,
+      "cycle_time_days_mean": 71.403,
+      "automation_rate": 0.915,
+      "rework_rate": 0.151,
+      "payment_block_rate": 0.044,
+      "avg_events": 200.553,
+      "pct": 0.336,
+      "eff_score": 5.0,
+      "eff_rank": 1
+    },
+    {
+      "cohort": 0,
+      "n_cases": 147762,
+      "cycle_time_days_median": 66.059,
+      "cycle_time_days_mean": 73.772,
+      "automation_rate": 0.258,
+      "rework_rate": 0.105,
+      "payment_block_rate": 0.0,
+      "avg_events": 5.358,
+      "pct": 58.698,
+      "eff_score": 8.0,
+      "eff_rank": 2
+    },
+    {
+      "cohort": 5,
+      "n_cases": 51206,
+      "cycle_time_days_median": 83.716,
+      "cycle_time_days_mean": 85.173,
+      "automation_rate": 0.253,
+      "rework_rate": 0.14,
+      "payment_block_rate": 1.0,
+      "avg_events": 6.524,
+      "pct": 20.341,
+      "eff_score": 11.0,
+      "eff_rank": 3
+    },
+    {
+      "cohort": 1,
+      "n_cases": 8751,
+      "cycle_time_days_median": 3.087,
+      "cycle_time_days_mean": 14.33,
+      "automation_rate": 0.078,
+      "rework_rate": 1.0,
+      "payment_block_rate": 0.004,
+      "avg_events": 2.678,
+      "pct": 3.476,
+      "eff_score": 13.0,
+      "eff_rank": 4
+    },
+    {
+      "cohort": 3,
+      "n_cases": 28677,
+      "cycle_time_days_median": 15.85,
+      "cycle_time_days_mean": 28.507,
+      "automation_rate": 0.074,
+      "rework_rate": 0.164,
+      "payment_block_rate": 0.0,
+      "avg_events": 2.416,
+      "pct": 11.392,
+      "eff_score": 13.0,
+      "eff_rank": 4
+    },
+    {
+      "cohort": 2,
+      "n_cases": 14492,
+      "cycle_time_days_median": 85.719,
+      "cycle_time_days_mean": 120.048,
+      "automation_rate": 0.422,
+      "rework_rate": 0.655,
+      "payment_block_rate": 0.315,
+      "avg_events": 14.335,
+      "pct": 5.757,
+      "eff_score": 13.0,
+      "eff_rank": 4
+    }
+  ],
+  "runtime_seconds": 161.6
+}

@@ -1,0 +1,30 @@
+cohort,transition,cohort_mean,global_mean,lift
+0,Record Invoice Receipt -> Clear Invoice,0.3287,0.2007,1.64
+0,Vendor creates invoice -> Record Goods Receipt,0.2538,0.1835,1.38
+0,Record Goods Receipt -> Vendor creates invoice,0.1935,0.1406,1.38
+0,Record Goods Receipt -> Record Invoice Receipt,0.2554,0.1859,1.37
+0,Receive Order Confirmation -> Record Goods Receipt,0.0628,0.0474,1.33
+1,Create Purchase Order Item -> Delete Purchase Order Item,0.7631,0.0266,28.71
+1,Create Purchase Order Item -> Receive Order Confirmation,0.1189,0.0636,1.87
+1,Create Purchase Requisition Item -> Create Purchase Order Item,0.1024,0.1002,1.02
+1,Create Purchase Order Item -> Change Quantity,0.0234,0.027,0.87
+2,Record Service Entry Sheet -> Record Goods Receipt,0.0468,0.0033,14.31
+2,Clear Invoice -> Record Invoice Receipt,0.1149,0.0084,13.7
+2,Record Service Entry Sheet -> Record Service Entry Sheet,0.1686,0.0125,13.52
+2,Clear Invoice -> Clear Invoice,0.0875,0.0065,13.38
+2,Record Goods Receipt -> Record Service Entry Sheet,0.0746,0.0082,9.06
+3,Create Purchase Order Item -> Record Goods Receipt,0.5656,0.1768,3.2
+3,Record Goods Receipt -> Record Goods Receipt,0.0355,0.0189,1.88
+3,Create Purchase Requisition Item -> Create Purchase Order Item,0.1858,0.1002,1.85
+3,Change Quantity -> Record Goods Receipt,0.037,0.0231,1.6
+3,Create Purchase Order Item -> Change Quantity,0.0414,0.027,1.54
+4,Record Service Entry Sheet -> Record Service Entry Sheet,0.7993,0.0125,64.11
+4,Record Service Entry Sheet -> Record Goods Receipt,0.131,0.0033,40.08
+4,Record Goods Receipt -> Record Service Entry Sheet,0.155,0.0082,18.84
+4,Record Goods Receipt -> Record Goods Receipt,0.3179,0.0189,16.82
+4,Record Invoice Receipt -> Record Invoice Receipt,0.0336,0.0079,4.28
+5,Record Goods Receipt -> Remove Payment Block,0.1574,0.0332,4.75
+5,Record Invoice Receipt -> Remove Payment Block,0.3494,0.0752,4.64
+5,Remove Payment Block -> Clear Invoice,0.39,0.0853,4.57
+5,Record Invoice Receipt -> Record Goods Receipt,0.146,0.0327,4.47
+5,Record Invoice Receipt -> Vendor creates invoice,0.0201,0.0083,2.41

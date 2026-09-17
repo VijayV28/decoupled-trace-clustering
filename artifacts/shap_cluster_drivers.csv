@@ -1,0 +1,37 @@
+cohort,rank,feature,value,mean_shap,count,cohort_pct
+0,1,sub_spend_area,Products for Resale,0.1767,12656,33.1
+0,2,item_type,Standard,0.1554,36886,96.4
+0,3,sub_spend_area,Labels,0.08,10488,27.4
+0,4,spend_area,Sales,0.0365,13279,34.7
+0,5,spend_classification,PR,0.0239,23259,60.8
+0,6,item_category,"3-way match, invoice before GR",0.013,36638,95.7
+1,1,case_value_band,"D9 (€2,481–€5,951)",0.8562,95,21.5
+1,2,case_value_band,"D10 (€5,951–€26,788,948)",0.6646,93,21.1
+1,3,case_value_band,"D8 (€1,227–€2,481)",0.6432,94,21.3
+1,4,sub_spend_area,Trading products (old structure),0.533,192,43.5
+1,5,spend_area,Others,0.2737,90,20.4
+1,6,spend_area,Packaging,0.132,118,26.8
+2,1,document_type,EC Purchase order,2.8334,423,27.9
+2,2,case_value_band,"D10 (€5,951–€26,788,948)",0.7953,694,45.8
+2,3,item_type,Service,0.7322,817,53.9
+2,4,item_category,"3-way match, invoice after GR",0.4969,890,58.7
+2,5,sub_spend_area,Road Packed,0.4432,489,32.3
+2,6,spend_area,Others,0.1223,1229,81.1
+3,1,case_value_band,D1 (€0–€13),1.3657,4670,88.3
+3,2,item_type,Consignment,1.2834,4047,76.5
+3,3,item_category,Consignment,0.3463,4047,76.5
+3,4,sub_spend_area,Others,0.087,1675,31.7
+3,5,spend_area,Packaging,0.0336,2602,49.2
+3,6,company,companyID_0000,0.0004,5182,98.0
+4,1,item_type,Service,2.3761,190,100.0
+4,2,sub_spend_area,Road Packed,1.1906,141,74.2
+4,3,case_value_band,"D10 (€5,951–€26,788,948)",0.6392,165,86.8
+4,4,sub_spend_area,Others,0.2507,49,25.8
+4,5,item_category,"3-way match, invoice after GR",0.1714,190,100.0
+4,6,gr_based_inv_verif,Yes,0.1067,190,100.0
+5,1,sub_spend_area,Plastic Containers & Lids < 30L,0.3241,1948,51.5
+5,2,item_type,Standard,0.1262,3616,95.7
+5,3,item_category,"3-way match, invoice before GR",0.0658,3612,95.6
+5,4,spend_classification,PR,0.0405,3222,85.3
+5,5,document_type,Standard PO,0.0015,3779,100.0
+5,6,gr_based_inv_verif,No,0.0006,3612,95.6
