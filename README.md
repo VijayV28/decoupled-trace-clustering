@@ -165,4 +165,4 @@ If you use this code, please cite the accompanying paper and the source log
 
 ## License
 
-See `LICENSE`.
+See [LICENSE](LICENSE).
